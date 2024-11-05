@@ -10,7 +10,7 @@ Customer churn prediction is to measure why customers are leaving a business. In
 
 ### 2.1 First 5 rows of our dataset
 
-![Screenshot 2024-11-05 164828](https://github.com/user-attachments/assets/8c674e75-69f3-47d7-a83b-ad3564827afb)
+![Screenshot 2024-11-05 164828](https://github.com/user-attachments/assets/3ceed699-1b51-4b5b-86e8-39ae46fc639c)
 
 ### 2.2 Shape of our Dataset:
 
