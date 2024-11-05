@@ -25,7 +25,7 @@ The datatypes of our columns :
 
 ![Screenshot 2024-11-05 164828](https://github.com/user-attachments/assets/39bdf133-9764-4cfa-88cc-dbe0b7fe366e)
 
-# 3. Preprocessing and Data Cleaning for EDA
+# 3. Semi-preprocessing and Data Cleaning for EDA
 
 ### 3.1 Detecting Null values in our dataset:
 
@@ -53,9 +53,166 @@ Observation:
 Observation:
 1. About 75% of customer with Month-to-Month Contract opted to move out as compared to 13% of customrs with One Year Contract and 3% with Two Year Contract
 
-### 3.5 Customer Churn Rates by Contract Type
+### 3.5 Distribution of Customer Payment Methods
 
-![Screenshot 2024-11-05 164828](https://github.com/user-attachments/assets/f3574b26-37bb-44f6-8209-4eae5673a26c)
+![Screenshot 2024-11-05 164828](https://github.com/user-attachments/assets/7cd4b19c-13a9-4bb5-8438-69c3fca839d4)
+
+### 3.6 Customer Churn Analysis by Payment Method
+
+![Screenshot 2024-11-05 164828](https://github.com/user-attachments/assets/d2c641e0-8b7a-4296-84f0-b3190132f1f5)
+
+Observation:
+1. Major customers who moved out were having Electronic Check as Payment Method.
+2. Customers who opted for Credit-Card automatic transfer or Bank Automatic Transfer and Mailed Check as Payment Method were less likely to move out.
+
+### 3.7 Churn Analysis by Internet Service Type and Gender
+
+![Screenshot 2024-11-05 164828](https://github.com/user-attachments/assets/d6a35e59-109f-4d82-8fee-7781559bf31c)
+
+Observation:
+1. A lot of customers choose the Fiber optic service and it's also evident that the customers who use Fiber optic have high churn rate, this might suggest a dissatisfaction with this type of internet service.
+2. Customers having DSL service are majority in number and have less churn rate compared to Fibre optic service.
+
+### 3.8 Distribution of Churn by Dependents Status
+
+![Screenshot 2024-11-05 164828](https://github.com/user-attachments/assets/df5833a9-96c0-40d7-8a8a-ed0216118211)
+
+1. Customers without dependents are more likely to churn
+
+### 3.9 Churn Distribution Based on Partnership Status
+
+![Screenshot 2024-11-05 164828](https://github.com/user-attachments/assets/0ea951b8-778b-436b-862d-25c9c3f0d5b7) 
+
+1. Customers that doesn't have partners are more likely to churn
+
+### 3.10 Churn Distribution Among Senior Citizens vs. Non-Senior Citizens
+
+![Screenshot 2024-11-05 164828](https://github.com/user-attachments/assets/e3aee662-f1ab-4b6c-97db-ebf6bef44c6b)
+
+Observation: 
+1. It can be observed that the fraction of senior citizen is very less.
+2. Most of the senior citizens churn.
+
+### 3.11 Churn Distribution Based on Online Security Status
+
+![Screenshot 2024-11-05 164828](https://github.com/user-attachments/assets/032e3193-3128-4412-8c22-65d78e98d6d2)
+
+Observation: 
+1. Most customers churn in the absence of online security,
+
+### 3.12 Churn Distribution Based on Paperless Billing Status
+
+![Screenshot 2024-11-05 164828](https://github.com/user-attachments/assets/f6a9109a-e008-4cca-a18d-b6e1ec7e1d30)
+
+Observation:
+1. Customers with Paperless Billing are most likely to churn.
+
+### 3.13 Churn Distribution Based on Tech Support Status
+
+![Screenshot 2024-11-05 164828](https://github.com/user-attachments/assets/357ea9b4-2944-4de7-9a2c-61d63d11533a)  
+
+Observation: 
+1. Customers with no TechSupport are most likely to migrate to another service provider.
+
+### 3.14 Churn Distribution Based on Phone Service Subscription
+
+![Screenshot 2024-11-05 164828](https://github.com/user-attachments/assets/0820e9ab-6aee-4c00-87e8-7c30ecf9b301)
+
+Observation:
+1. Very small fraction of customers don't have a phone service and out of that, 1/3rd Customers are more likely to churn.
+
+### 3.15 Density Distribution of Monthly Charges by Churn Status
+
+![Screenshot 2024-11-05 164828](https://github.com/user-attachments/assets/f1fa9680-c295-470a-b4bf-fdcd9d4cc439)
+
+Observation:
+1. Customers with higher Monthly Charges are also more likely to churn
+
+### 3.16 otal Charges: A Comparative Analysis of Churned and Retained Customers
+
+![Screenshot 2024-11-05 164828](https://github.com/user-attachments/assets/899a656c-0066-40c2-9a79-7ef8cb0e960d)
+
+### 3.17 Box Plot of Tenure by Churn Status
+
+![Screenshot 2024-11-05 164828](https://github.com/user-attachments/assets/f551f70b-4b30-41f2-8643-229530e3e50c)
+
+Observation:
+1. New customers are more likely to churn
+
+### 3.18 Correlation Heatmap of Features
+
+![Screenshot 2024-11-05 164828](https://github.com/user-attachments/assets/ed15fa89-0e86-4ef7-a398-814036c49d5c)
+
+# 4. Preprocessing of data 
+
+### 4.1 One-Hot Encoding: Transforming Categorical Data into Numerical Format
+
+![image](https://github.com/user-attachments/assets/60e82922-ba25-48e6-b147-63761b01d2af)
+
+We have used one-hot encoding is performed to convert categorical variables into a numerical format. This technique creates binary columns for each category, ensuring that the model treats them as distinct and independent features.
+
+### 4.2 Normalization of output to enhancing Model Performance
+
+![Screenshot 2024-11-05 164828](https://github.com/user-attachments/assets/8da86b52-6b64-4fbe-9be5-644f618c589b)  
+
+Normalization is used in machine learning to scale input features to a similar range, which helps improve the convergence speed of optimization algorithms and enhances the overall performance of models.
+
+# 5. Handling class imbalance using SMOTE
+
+![Screenshot 2024-11-05 164828](https://github.com/user-attachments/assets/5419ef15-4822-47cf-b92b-6ca291d98288)  
+
+SMOTE (Synthetic Minority Over-sampling Technique) is used in churn analysis to address class imbalance by generating synthetic samples for the minority class, which helps improve the model's ability to detect churn cases.
+
+# 6. Model Building and Model Evaluation
+
+### 6.1 Logisitc Regression  
+
+![Screenshot 2024-11-05 164828](https://github.com/user-attachments/assets/4238483b-a50f-42d0-bbf3-e485413e9781)
+
+### 6.2 Random Forest Classifier
+
+![image](https://github.com/user-attachments/assets/b145c5dc-8db7-4798-a563-d13646d18704)
+
+### 6.3 Gradient Boosting Classifier
+
+![image](https://github.com/user-attachments/assets/dc94c01e-fd48-4b66-9c23-b853feab39f3)
+
+# 7. Customer Segmentation
+
+![image](https://github.com/user-attachments/assets/5a26693a-1ad4-4510-a9a0-0c507fc0fbea)  
+
+# 8. Model Evaluation (using ROC-AUC)
+
+![Screenshot 2024-11-05 164828](https://github.com/user-attachments/assets/f7c73a2c-6ddb-4af3-94e4-18bcb105858a)  
+
+ROC-AUC is used to evaluate the performance of a binary classification model by measuring its ability to discriminate between positive and negative classes across various threshold settings. It summarizes the trade-off between sensitivity (true positive rate) and specificity (false positive rate), providing a single metric that captures the model's overall effectiveness.
+
+# 9. Important features for Cuatomer churn
+
+![Screenshot 2024-11-05 164828](https://github.com/user-attachments/assets/3b71949a-5c7d-4dc0-bbfb-6a8e3fbffc3f)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
