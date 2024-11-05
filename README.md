@@ -1,7 +1,6 @@
 # ML_Project4: Telecom Customer Churn Prediction
 
-
-
+![Screenshot 2024-11-05 164828](https://github.com/user-attachments/assets/9a90d92e-b19c-4e4a-80c0-62d9c48ef372)
 
 
 # 1. Introduction: 
@@ -169,13 +168,20 @@ SMOTE (Synthetic Minority Over-sampling Technique) is used in churn analysis to 
 
 ![Screenshot 2024-11-05 164828](https://github.com/user-attachments/assets/4238483b-a50f-42d0-bbf3-e485413e9781)
 
+Observation: 
+The logistic regression model demonstrates a good overall accuracy of 77%, with a strong precision of 89% for the negative class (0) but a lower precision of 55% for the positive class (1). The recall for the positive class is relatively high at 74%, indicating that while the model is better at identifying positives, there is room for improvement in reducing false positives.
+
 ### 6.2 Random Forest Classifier
 
 ![image](https://github.com/user-attachments/assets/b145c5dc-8db7-4798-a563-d13646d18704)
 
+Observation: The random forest model achieves an overall accuracy of 78%, with a precision of 87% for the negative class (0) and 58% for the positive class (1). While the model performs well in identifying the negative class, the relatively low precision and recall for the positive class indicate a need for further optimization to enhance its ability to detect positives effectively.
+
 ### 6.3 Gradient Boosting Classifier
 
 ![image](https://github.com/user-attachments/assets/dc94c01e-fd48-4b66-9c23-b853feab39f3)
+
+Observation: The gradient boosting model exhibits an overall accuracy of 77%, with a high precision of 90% for the negative class (0) but a lower precision of 55% for the positive class (1). The model shows a commendable recall of 76% for the positive class, indicating its ability to capture many true positives, yet it still needs improvements in precision to minimize false positives effectively.
 
 # 7. Customer Segmentation
 
@@ -187,9 +193,13 @@ SMOTE (Synthetic Minority Over-sampling Technique) is used in churn analysis to 
 
 ROC-AUC is used to evaluate the performance of a binary classification model by measuring its ability to discriminate between positive and negative classes across various threshold settings. It summarizes the trade-off between sensitivity (true positive rate) and specificity (false positive rate), providing a single metric that captures the model's overall effectiveness.
 
-# 9. Important features for Cuatomer churn
+# 9. Important features for Customer churn prediction
 
 ![Screenshot 2024-11-05 164828](https://github.com/user-attachments/assets/3b71949a-5c7d-4dc0-bbfb-6a8e3fbffc3f)
+
+# 10. Conclusion 
+
+Customer churn is definitely bad to a firm ’s profitability. Various strategies can be implemented to eliminate customer churn. The best way to avoid customer churn is for a company to truly know its customers. This includes identifying customers who are at risk of churning and working to improve their satisfaction. Improving customer service is, of course, at the top of the priority for tackling this issue. Building customer loyalty through relevant experiences and specialized service is another strategy to reduce customer churn. Some firms survey customers who have already churned to understand their reasons for leaving in order to adopt a proactive approach to avoiding future customer churn.
 
 
 
